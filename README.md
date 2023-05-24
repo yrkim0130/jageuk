@@ -1,5 +1,5 @@
 # jageuk
-A site where you can find Korean and English quotes.
+A site where you can view Korean and English quotes.
 
 # Massively by HTML5 UP
 **Massively**는 텍스트 중심의 기사 지향적 디자인입니다.
