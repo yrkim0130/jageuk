@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--CSS 파일 추가 -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+	<title>자극 JaGeuk</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="intro">
+			<h1>자극<br />
+                jageuk</h1>
+            {% if eng %}
+            <p>{{ eng }}</p>
+            {% elif kor %}
+            <p>{{ kor }}</p>
+            {% endif %}
+			<div class="actions-container">
+				<ul class="actions">
+					<li><a href="{{ url_for('jageuk')}}" class="Korean" >Korean</a></li>
+				</ul>
+				<ul class="actions">
+					<li><a href="{{ url_for('jageuk_eng')}}" class="English">English</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts 파일 추가-->
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
